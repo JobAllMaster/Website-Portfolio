@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url(footer.css);
+@import url(responseUi.css);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+	text-decoration: none;
+}
+html{
+
+	scroll-behavior: smooth;
+
+}
+
+body{
+	font-family: "Bebas Neue", sans-serif;
+	margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    animation: transitionIn 0.75s;
+	overflow-x: hidden;
+}
+
+nav{
+	background: #fef0f1;
+	height: 100px;
+	width: 100%;
+	position: absolute;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+nav ul{
+	margin-top: 10px;
+	float: right;
+	margin-right: 20px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 10px;
+}
+nav ul li a{
+	font-weight: bold;
+	color: black;
+	font-size: 25px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform:capitalize;
+}
+a:hover{
+	transition: .5s;
+	background-color: #747472;
+}
+
+.LogoImage{
+	display: inline-block;
+	margin-left: 50px;
+  }
+  img{
+	position: sticky;
+	width: 300px;
+	height: 100px;
+	  border-radius: 20px;
+  }
+
+.checkbtn{
+	font-size: 30px;
+	color: black;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	margin-top: 25px;
+	cursor: pointer;
+	display: none;
+}
+
+#check {
+	display: none;
+}
+.desDiv{
+  color: black;
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+display: none;
+}
+
+.OrderBtn:hover{
+	transition: transform 0.5s;
+}
+
+.title1{
+  color: black;
+  margin-top: 13%;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  text-transform:initial;
+  font-weight: bolder;
+  padding: 20px;
+}
+
+#h1h{
+	background-color: white;
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: 10px 10px gray;
+}
+
+@keyframes transitionIn {
+	from {
+		opacity: 0;
+		transform: translateY(-500px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	
+}
+
+
+
+
+
+.OrderBtn:after {
+content: "";
+background: white;
+display: block;
+position: absolute;
+padding-top: 300%;
+padding-left: 350%;
+top: 0;
+transform: translate(-20%, -20%);
+opacity: 0;
+transition: all 0.8s;
+}
+
+.OrderBtn:active:after {
+padding: 0;
+margin: 0;
+opacity: 1;
+transition: 0s;
+}
+
+

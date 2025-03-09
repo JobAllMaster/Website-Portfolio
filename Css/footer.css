@@ -1,0 +1,46 @@
+
+  .footer{
+    position: fixed;
+    width: 100%;
+    margin-top: auto;
+    padding: 20px 0;
+    bottom: 0;
+    left: 0;
+    background: #fef0f1;
+    text-align: center;
+    z-index: 10000;
+    height: 100px;
+    animation: transitionIn 0.75s;
+  }
+  .mySpan{
+
+    display: inline-block;
+		color: black;
+		padding: 10px;
+    font-size: 20px;
+
+	}
+	.cta{
+		display: inline-block;
+	}
+  .allRight{
+    padding: 10px;
+    color: black;
+    font-size: 15px
+  }
+  @keyframes transitionIn {
+    from {
+      opacity: 0;
+      transform: translateY(500px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+  }
+
+  @media (max-width: 420px) {
+  
+  }
+  

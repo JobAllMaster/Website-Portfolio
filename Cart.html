@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="icon" type="image/x-icon" href="Logo/Icon.jpg">
+    <link rel="stylesheet" href="Css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-0oeGQbF02qF62X38bu/9tpIi16SYI6ELOVQpJjZ0HfOCUTtVoSH5fYr8iw4TgJJIMSTh1rXgkC/KMTt3A2wWNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <!-- For small screen -->
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <div class="desDiv"></div>
+                <div class="desDiv"></div>
+                <div class="desDiv"></div>
+            </label>
+
+            <!-- Logo -->
+            <div class="LogoImage">
+                <div class="LogoPng">
+                    <img src="Logo/Logo.jpg" alt="Be the locals logo">
+                </div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Cart.html">Cart</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-content">
+                    <div id="cart" class="cart">
+                        <h1 class="cart-title">Your Cart</h1>
+                        <div id="cart-items"></div>
+                        <br>
+                        <div class="cart-total">Total: ₱<span id="cart-total">0.00</span></div>
+                        <button class="OrderDoneBtn" onclick="checkCartAndProcess()">
+                            Order Now! <i class="fas fa-cart-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container1">
+            <a class="cta"href="/index.html"><span class="mySpan">Home</span></a>
+            <span class="mySpan">|</span>
+            <a class="cta" href="Webpage.html"><span class="mySpan">Contact</span></a>
+            <p class="allRight" ><span >@All rights reserved | 2024 BSIT - 22A2 | Designed by Deanne Vale & Aniel Jay Navida | ICT008</span></p>
+      </footer>
+
+    <script type="text/javascript" src="mainScript.js"></script>
+</body>
+</html>

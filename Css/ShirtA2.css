@@ -1,0 +1,158 @@
+
+@import url(general.css);
+@import url(responseUi.css);
+
+body{
+    background-color:#5e526b;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #5e526b;
+    height: auto;
+    margin-top: 13%;
+    padding-bottom: 150px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #5e526b;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .card-img {
+    width: 500px;
+    height: 500px;
+    margin-right: 16px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .card-text {
+    flex: 1;
+  }
+  
+  .card-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    background-color: gray;
+    color: #7729ca;
+    box-shadow: 10px 10px black;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+  }
+  .card-price{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    background-color: gray;
+    color: #7729ca;
+    box-shadow: 10px 10px black;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    margin-top: 20px;
+  }
+  
+  .card-description {
+    font-size: 20px;
+    color: #a78161;
+    margin-top: 50px;
+  }
+.card a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.OrderBtn {
+    background-color: #3c465c;
+    border: none;
+    color: #d3d4d9;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 50px;
+    box-shadow: 5px 5px black;
+    border-radius: 50px;
+    position: relative; 
+    overflow: hidden;
+    }
+
+    @media (max-width: 952px) {
+  
+    }
+    @media (max-width: 600px) {
+    
+      .card {
+        flex-direction: column;
+        margin-top: 30%;
+      }
+    }
+    @media (max-width: 420px) {
+    
+      .card {
+        display: flex;
+        width: 350px;
+        padding: 20px;
+      }
+      
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .card-img {
+        width: 300px;
+        padding: 0px;
+        margin-left: 18px;
+      }
+      
+      .card-text {
+        flex: 1;
+      }
+      
+      .card-title {
+        font-size: 30px;
+        margin-top: 20%;
+        margin-left: 28%;
+      }
+      .card-price{
+        font-size: 30px;
+    
+        margin-left: 30%;
+      }
+    
+      .card-description {
+        font-size: 20px;
+       padding: 20px;
+      }
+      .OrderBtn{
+       margin-left: 30%;
+      }
+    }
+    
